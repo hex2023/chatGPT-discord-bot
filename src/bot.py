@@ -20,7 +20,7 @@ def run_discord_bot():
         await discordClient.tree.sync()
         loop = asyncio.get_event_loop()
         loop.create_task(discordClient.process_messages())
-        logger.info(f'{discordClient.user} is now running!')
+        logger.info(f'{discordClient.user} is now running!--updated 2024/10/18-12:17pm')
 
 
     @discordClient.tree.command(name="chat", description="Have a chat with ChatGPT")
